@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/editor/bindings/editor_binding.dart';
+import '../modules/editor/views/editor_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.SPLASH,
       page: () => const SplashView(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: _Paths.EDITOR,
+      page: () => const EditorView(),
+      binding: EditorBinding(),
     ),
   ];
 }
